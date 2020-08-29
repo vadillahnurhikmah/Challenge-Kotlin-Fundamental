@@ -2,6 +2,7 @@ import java.util.*
 
 public var input = Scanner(System.`in`);
 fun main(){
+    println("==========MASUKKAN IDENTITAS ANDA==========")
     print("Nama : ")
     val nama: String? = input.nextLine()
 
@@ -16,11 +17,11 @@ fun main(){
     }
     print("No Absen : ")
     val Absen: String?  = input.nextLine()
-    println("=============================")
+    println("==========MENGHITUNG BANGUN RUANG==========")
     menu()
 }
 fun menu(){
-    println("1. Balok\n2. Bola\n ")
+    println("1. Volume Balok\n2. Volume Bola\n ")
     print ("Silahkan pilih menu di atas : ")
     val pill:Int? = input.nextInt()
     when (pill) {
@@ -33,18 +34,18 @@ fun menu(){
     }
 }
 fun bola(){
-    println("====================================")
+    println("======MENGHITUNG VOLUME BOLA======")
     print("Masukkan Jari-jari : ")
     val jari: Double = input.nextDouble()
     val v: Double = ((jari * jari * jari * 22 * 4 / 7) / 3)
-    println("====================================")
+    println("==========HASILNYA==========")
     print("Volume bola adalah ")
     System.out.printf("%.2f", v)
     println()
     println("====================================")
 }
 fun balok(){
-    println("====================================")
+    println("=====MENGHITUNG VOLUME BALOK=====")
     print("Masukkan panjang : ")
     var panjang: Double? = null
     panjang = input.nextDouble()
@@ -55,8 +56,8 @@ fun balok(){
     var tinggi: Double? = null
     tinggi = input.nextDouble()
     val v :Double = panjang * lebar * tinggi
-    println("====================================")
-    print("Volume dari balok adalah ")
+    println("==========HASILNYA==========")
+    print("Volume balok adalah ")
     System.out.printf("%.2f", v)
     println()
 }
